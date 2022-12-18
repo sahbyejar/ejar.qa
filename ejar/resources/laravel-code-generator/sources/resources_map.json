@@ -1,0 +1,51 @@
+[
+    {
+        "model-name": "slider",
+        "resource-file": "sliders.json"
+    },
+    {
+        "model-name": "City",
+        "resource-file": "cities.json"
+    },
+    {
+        "model-name": "Ville",
+        "resource-file": "villes.json"
+    },
+    {
+        "model-name": "category",
+        "resource-file": "categories.json"
+    },
+    {
+        "model-name": "Slider",
+        "resource-file": "sliders.json"
+    },
+    {
+        "model-name": "User",
+        "resource-file": "users.json",
+        "table-name": "users"
+    },
+    {
+        "model-name": "Produit",
+        "resource-file": "produits.json"
+    },
+    {
+        "model-name": "Produit_photo",
+        "resource-file": "produit_photos.json"
+    },
+    {
+        "model-name": "Vip",
+        "resource-file": "vips.json"
+    },
+    {
+        "model-name": "favorite",
+        "resource-file": "favorites.json"
+    },
+    {
+        "model-name": "Settings",
+        "resource-file": "settings.json"
+    },
+    {
+        "model-name": "Priority",
+        "resource-file": "priorities.json"
+    }
+]

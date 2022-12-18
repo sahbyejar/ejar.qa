@@ -1,0 +1,2589 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "labels": {
+                "en": "Id",
+                "ar": "Id"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "",
+            "is-on-index": false,
+            "is-on-show": false,
+            "is-on-form": false,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": true,
+            "comment": null,
+            "is-nullable": false,
+            "is-header": false,
+            "is-unsigned": true,
+            "is-auto-increment": true,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter id here...",
+                "ar": "Enter id here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "id",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The id of the model.",
+                "ar": "The id of the model."
+            }
+        },
+        {
+            "name": "category_id",
+            "labels": {
+                "en": "category",
+                "ar": "category"
+            },
+            "html-type": "select",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": false,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": true,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": true,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Select user",
+                "ar": "Select user"
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": {
+                "name": "category",
+                "type": "belongsTo",
+                "params": [
+                    "App\\Models\\category",
+                    "user_id"
+                ],
+                "field": "name"
+            },
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "user_id",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The user of the model.",
+                "ar": "The user of the model."
+            }
+        },
+        {
+            "name": "user_id",
+            "labels": {
+                "en": "User",
+                "ar": "User"
+            },
+            "html-type": "select",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": false,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": true,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": true,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Select user",
+                "ar": "Select user"
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": {
+                "name": "user",
+                "type": "belongsTo",
+                "params": [
+                    "App\\Models\\User",
+                    "user_id"
+                ],
+                "field": "name"
+            },
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "user_id",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The user of the model.",
+                "ar": "The user of the model."
+            }
+        },
+        {
+            "name": "name_ar",
+            "labels": {
+                "en": "Name Ar",
+                "ar": "Name Ar"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter name ar here...",
+                "ar": "Enter name ar here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "name_ar",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The name ar of the model.",
+                "ar": "The name ar of the model."
+            }
+        },
+        {
+            "name": "name",
+            "labels": {
+                "en": "Name",
+                "ar": "Name"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1|max:255",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [
+                255
+            ],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": true,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter name here...",
+                "ar": "Enter name here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "name",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The name of the model.",
+                "ar": "The name of the model."
+            }
+        },
+        {
+            "name": "photo",
+            "labels": {
+                "en": "Photo",
+                "ar": "Photo"
+            },
+            "html-type": "file",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "file",
+            "is-on-index": false,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {},
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "photo",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The photo of the model.",
+                "ar": "The photo of the model."
+            }
+        },
+        {
+            "name": "discription_ar",
+            "labels": {
+                "en": "Discription Ar",
+                "ar": "Discription Ar"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter discription ar here...",
+                "ar": "Enter discription ar here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "discription_ar",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The discription ar of the model.",
+                "ar": "The discription ar of the model."
+            }
+        },
+        {
+            "name": "discription",
+            "labels": {
+                "en": "Discription",
+                "ar": "Discription"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter discription here...",
+                "ar": "Enter discription here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "discription",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The discription of the model.",
+                "ar": "The discription of the model."
+            }
+        },
+        {
+            "name": "price",
+            "labels": {
+                "en": "Price",
+                "ar": "Price"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter price here...",
+                "ar": "Enter price here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "price",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The price of the model.",
+                "ar": "The price of the model."
+            }
+        },
+        {
+            "name": "phone",
+            "labels": {
+                "en": "Phone",
+                "ar": "Phone"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter phone here...",
+                "ar": "Enter phone here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "phone",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The phone of the model.",
+                "ar": "The phone of the model."
+            }
+        },
+        {
+            "name": "ville_id",
+            "labels": {
+                "en": "Ville",
+                "ar": "Ville"
+            },
+            "html-type": "select",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": true,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": true,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Select ville",
+                "ar": "Select ville"
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": {
+                "name": "ville",
+                "type": "belongsTo",
+                "params": [
+                    "App\\Models\\Ville",
+                    "ville_id"
+                ],
+                "field": "ville"
+            },
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "ville_id",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The ville of the model.",
+                "ar": "The ville of the model."
+            }
+        },
+        {
+            "name": "city_id",
+            "labels": {
+                "en": "City",
+                "ar": "City"
+            },
+            "html-type": "select",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": true,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": true,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Select city",
+                "ar": "Select city"
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": {
+                "name": "city",
+                "type": "belongsTo",
+                "params": [
+                    "App\\Models\\City",
+                    "city_id"
+                ],
+                "field": "name"
+            },
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "city_id",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The city of the model.",
+                "ar": "The city of the model."
+            }
+        },
+        {
+            "name": "longitude",
+            "labels": {
+                "en": "Longitude",
+                "ar": "Longitude"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": false,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter longitude here...",
+                "ar": "Enter longitude here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "longitude",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The longitude of the model.",
+                "ar": "The longitude of the model."
+            }
+        },
+        {
+            "name": "latitude",
+            "labels": {
+                "en": "Latitude",
+                "ar": "Latitude"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": false,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter latitude here...",
+                "ar": "Enter latitude here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "latitude",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The latitude of the model.",
+                "ar": "The latitude of the model."
+            }
+        },
+        {
+            "name": "vupost",
+            "labels": {
+                "en": "Vupost",
+                "ar": "Vupost"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": false,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter vupost here...",
+                "ar": "Enter vupost here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "vupost",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The vupost of the model.",
+                "ar": "The vupost of the model."
+            }
+        },
+        {
+            "name": "instagrame",
+            "labels": {
+                "en": "Instagrame",
+                "ar": "Instagrame"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": false,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter instagrame here...",
+                "ar": "Enter instagrame here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "instagrame",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The instagrame of the model.",
+                "ar": "The instagrame of the model."
+            }
+        },
+        {
+            "name": "vuinsta",
+            "labels": {
+                "en": "Vuinsta",
+                "ar": "Vuinsta"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": false,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter vuinsta here...",
+                "ar": "Enter vuinsta here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "vuinsta",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The vuinsta of the model.",
+                "ar": "The vuinsta of the model."
+            }
+        },
+        {
+            "name": "facebook",
+            "labels": {
+                "en": "Facebook",
+                "ar": "Facebook"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter facebook here...",
+                "ar": "Enter facebook here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "facebook",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The facebook of the model.",
+                "ar": "The facebook of the model."
+            }
+        },
+        {
+            "name": "vufb",
+            "labels": {
+                "en": "Vufb",
+                "ar": "Vufb"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": false,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter vufb here...",
+                "ar": "Enter vufb here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "vufb",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The vufb of the model.",
+                "ar": "The vufb of the model."
+            }
+        },
+        {
+            "name": "siteweb",
+            "labels": {
+                "en": "Siteweb",
+                "ar": "Siteweb"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter siteweb here...",
+                "ar": "Enter siteweb here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "siteweb",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The siteweb of the model.",
+                "ar": "The siteweb of the model."
+            }
+        },
+        {
+            "name": "vuweb",
+            "labels": {
+                "en": "Vuweb",
+                "ar": "Vuweb"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": false,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter vuweb here...",
+                "ar": "Enter vuweb here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "vuweb",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The vuweb of the model.",
+                "ar": "The vuweb of the model."
+            }
+        },
+        {
+            "name": "linkshare",
+            "labels": {
+                "en": "Linkshare",
+                "ar": "Linkshare"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": false,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter linkshare here...",
+                "ar": "Enter linkshare here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "linkshare",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The linkshare of the model.",
+                "ar": "The linkshare of the model."
+            }
+        },
+        {
+            "name": "cliquephone",
+            "labels": {
+                "en": "Cliquephone",
+                "ar": "Cliquephone"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": false,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter cliquephone here...",
+                "ar": "Enter cliquephone here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "cliquephone",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The cliquephone of the model.",
+                "ar": "The cliquephone of the model."
+            }
+        },
+        {
+            "name": "whatsapp",
+            "labels": {
+                "en": "Whatsapp",
+                "ar": "Whatsapp"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter whatsapp here...",
+                "ar": "Enter whatsapp here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "whatsapp",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The whatsapp of the model.",
+                "ar": "The whatsapp of the model."
+            }
+        },
+        {
+            "name": "clique_whatsapp",
+            "labels": {
+                "en": "Clique Whatsapp",
+                "ar": "Clique Whatsapp"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": false,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter clique whatsapp here...",
+                "ar": "Enter clique whatsapp here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "clique_whatsapp",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The clique whatsapp of the model.",
+                "ar": "The clique whatsapp of the model."
+            }
+        },
+        {
+            "name": "rent_sale",
+            "labels": {
+                "en": "Rent Sale",
+                "ar": "Rent Sale"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter rent sale here...",
+                "ar": "Enter rent sale here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "rent_sale",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The rent sale of the model.",
+                "ar": "The rent sale of the model."
+            }
+        },
+        {
+            "name": "chiket",
+            "labels": {
+                "en": "Chiket",
+                "ar": "Chiket"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter chiket here...",
+                "ar": "Enter chiket here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "chiket",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The chiket of the model.",
+                "ar": "The chiket of the model."
+            }
+        },
+        {
+            "name": "cautionnement",
+            "labels": {
+                "en": "Cautionnement",
+                "ar": "Cautionnement"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter cautionnement here...",
+                "ar": "Enter cautionnement here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "cautionnement",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The cautionnement of the model.",
+                "ar": "The cautionnement of the model."
+            }
+        },
+        {
+            "name": "price_cautionnement",
+            "labels": {
+                "en": "Price Cautionnement",
+                "ar": "Price Cautionnement"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter price cautionnement here...",
+                "ar": "Enter price cautionnement here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "price_cautionnement",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The price cautionnement of the model.",
+                "ar": "The price cautionnement of the model."
+            }
+        },
+        {
+            "name": "espacer",
+            "labels": {
+                "en": "Espacer",
+                "ar": "Espacer"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter espacer here...",
+                "ar": "Enter espacer here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "espacer",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The espacer of the model.",
+                "ar": "The espacer of the model."
+            }
+        },
+        {
+            "name": "interface",
+            "labels": {
+                "en": "Interface",
+                "ar": "Interface"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter interface here...",
+                "ar": "Enter interface here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "interface",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The interface of the model.",
+                "ar": "The interface of the model."
+            }
+        },
+        {
+            "name": "wifi",
+            "labels": {
+                "en": "Wifi",
+                "ar": "Wifi"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter wifi here...",
+                "ar": "Enter wifi here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "wifi",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The wifi of the model.",
+                "ar": "The wifi of the model."
+            }
+        },
+        {
+            "name": "kahramam",
+            "labels": {
+                "en": "Kahramam",
+                "ar": "Kahramam"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter kahramam here...",
+                "ar": "Enter kahramam here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "kahramam",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The kahramam of the model.",
+                "ar": "The kahramam of the model."
+            }
+        },
+        {
+            "name": "route_principale",
+            "labels": {
+                "en": "Route Principale",
+                "ar": "Route Principale"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter route principale here...",
+                "ar": "Enter route principale here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "route_principale",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The route principale of the model.",
+                "ar": "The route principale of the model."
+            }
+        },
+        {
+            "name": "commission",
+            "labels": {
+                "en": "Commission",
+                "ar": "Commission"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "1": "No",
+                "2": "demi",
+                "3": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter commission here...",
+                "ar": "Enter commission here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "commission",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The commission of the model.",
+                "ar": "The commission of the model."
+            }
+        },
+        {
+            "name": "vip1",
+            "labels": {
+                "en": "Vip1",
+                "ar": "Vip1"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter vip1 here...",
+                "ar": "Enter vip1 here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "vip1",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The vip1 of the model.",
+                "ar": "The vip1 of the model."
+            }
+        },
+        {
+            "name": "vip2",
+            "labels": {
+                "en": "Vip2",
+                "ar": "Vip2"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter vip2 here...",
+                "ar": "Enter vip2 here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "vip2",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The vip2 of the model.",
+                "ar": "The vip2 of the model."
+            }
+        },
+        {
+            "name": "parking",
+            "labels": {
+                "en": "Parking",
+                "ar": "Parking"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter parking here...",
+                "ar": "Enter parking here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "parking",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The parking of the model.",
+                "ar": "The parking of the model."
+            }
+        },
+        {
+            "name": "Piscine",
+            "labels": {
+                "en": "Piscine",
+                "ar": "Piscine"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter piscine here...",
+                "ar": "Enter piscine here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "Piscine",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The piscine of the model.",
+                "ar": "The piscine of the model."
+            }
+        },
+        {
+            "name": "gym",
+            "labels": {
+                "en": "Gym",
+                "ar": "Gym"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter gym here...",
+                "ar": "Enter gym here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "gym",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The gym of the model.",
+                "ar": "The gym of the model."
+            }
+        },
+        {
+            "name": "firstsaken",
+            "labels": {
+                "en": "Firstsaken",
+                "ar": "Firstsaken"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter firstsaken here...",
+                "ar": "Enter firstsaken here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "firstsaken",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The firstsaken of the model.",
+                "ar": "The firstsaken of the model."
+            }
+        },
+        {
+            "name": "salon",
+            "labels": {
+                "en": "Salon",
+                "ar": "Salon"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter salon here...",
+                "ar": "Enter salon here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "salon",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The salon of the model.",
+                "ar": "The salon of the model."
+            }
+        },
+        {
+            "name": "toilet",
+            "labels": {
+                "en": "Toilet",
+                "ar": "Toilet"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter toilet here...",
+                "ar": "Enter toilet here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "toilet",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The toilet of the model.",
+                "ar": "The toilet of the model."
+            }
+        },
+        {
+            "name": "room",
+            "labels": {
+                "en": "Room",
+                "ar": "Room"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter room here...",
+                "ar": "Enter room here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "room",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The room of the model.",
+                "ar": "The room of the model."
+            }
+        },
+        {
+            "name": "officeoy",
+            "labels": {
+                "en": "Officeoy",
+                "ar": "Officeoy"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter officeoy here...",
+                "ar": "Enter officeoy here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "officeoy",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The officeoy of the model.",
+                "ar": "The officeoy of the model."
+            }
+        },
+        {
+            "name": "office",
+            "labels": {
+                "en": "Office",
+                "ar": "Office"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter office here...",
+                "ar": "Enter office here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "office",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The office of the model.",
+                "ar": "The office of the model."
+            }
+        },
+        {
+            "name": "secretary",
+            "labels": {
+                "en": "Secretary",
+                "ar": "Secretary"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter secretary here...",
+                "ar": "Enter secretary here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "secretary",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The secretary of the model.",
+                "ar": "The secretary of the model."
+            }
+        },
+        {
+            "name": "imprimerie",
+            "labels": {
+                "en": "Imprimerie",
+                "ar": "Imprimerie"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter imprimerie here...",
+                "ar": "Enter imprimerie here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "imprimerie",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The imprimerie of the model.",
+                "ar": "The imprimerie of the model."
+            }
+        },
+        {
+            "name": "DELETED",
+            "labels": {
+                "en": "D E L E T E D",
+                "ar": "D E L E T E D"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter d e l e t e d here...",
+                "ar": "Enter d e l e t e d here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "DELETED",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The d e l e t e d of the model.",
+                "ar": "The d e l e t e d of the model."
+            }
+        },
+        {
+            "name": "accepted",
+            "labels": {
+                "en": "Accepted",
+                "ar": "Accepted"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter accepted here...",
+                "ar": "Enter accepted here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "accepted",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The accepted of the model.",
+                "ar": "The accepted of the model."
+            }
+        },
+        {
+            "name": "furnished",
+            "labels": {
+                "en": "Furnished",
+                "ar": "Furnished"
+            },
+            "html-type": "checkbox",
+            "css-class": "",
+            "options": {
+                "No": "No",
+                "Yes": "Yes"
+            },
+            "html-value": null,
+            "validation": "string|min:1",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "en": "Enter furnished here...",
+                "ar": "Enter furnished here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "furnished",
+            "is-api-visible": true,
+            "api-description": {
+                "en": "The furnished of the model.",
+                "ar": "The furnished of the model."
+            }
+        }
+    ],
+    "relations": [],
+    "indexes": [],
+    "auto-manage-created-and-updated-at": true,
+    "table-name": null,
+    "protection": {
+        "is-model-protected": false,
+        "is-controller-protected": false,
+        "is-api-resource-protected": false,
+        "is-api-resource-collection-protected": false,
+        "is-api-documentation-protected": false,
+        "is-api-documentation-controller-protected": false,
+        "is-form-request-protected": false,
+        "is-languages-protected": false,
+        "is-form-view-protected": false,
+        "is-index-view-protected": false,
+        "is-create-view-protected": false,
+        "is-edit-view-protected": false,
+        "is-show-view-protected": false
+    },
+    "api-documentation": {
+        "access_token_with_bearer": {
+            "en": "The access token prefixed with the \"Bearer \" key word.",
+            "ar": "The access token prefixed with the \"Bearer \" key word."
+        },
+        "index_route_description": {
+            "en": "Retrieve existing produits.",
+            "ar": "Retrieve existing produits."
+        },
+        "index_route_response_description": {
+            "en": "The API's response will be JSON based data. The JSON object will be structured as follow",
+            "ar": "The API's response will be JSON based data. The JSON object will be structured as follow"
+        },
+        "the_key_is_the_model_property_and_the_value_is_the_model_value": {
+            "en": "The array's key is the produit property name where the value is the assigned value to the retrieved produit.",
+            "ar": "The array's key is the produit property name where the value is the assigned value to the retrieved produit."
+        },
+        "link_to_retrieve_first_page": {
+            "en": "Link to retrieve first page.",
+            "ar": "Link to retrieve first page."
+        },
+        "link_to_retrieve_last_page": {
+            "en": "Link to retrieve last page.",
+            "ar": "Link to retrieve last page."
+        },
+        "link_to_retrieve_previous_page": {
+            "en": "Link to retrieve previous page.",
+            "ar": "Link to retrieve previous page."
+        },
+        "link_to_retrieve_next_page": {
+            "en": "Link to retrieve next page.",
+            "ar": "Link to retrieve next page."
+        },
+        "the_number_of_current_page": {
+            "en": "The number of current page.",
+            "ar": "The number of current page."
+        },
+        "the_index_of_the_first_retrieved_item": {
+            "en": "The index of first retrieved produit.",
+            "ar": "The index of first retrieved produit."
+        },
+        "the_number_of_the_last_page": {
+            "en": "The number of the last page.",
+            "ar": "The number of the last page."
+        },
+        "the_base_link_to_the_resource": {
+            "en": "The base link to the api resource.",
+            "ar": "The base link to the api resource."
+        },
+        "the_number_of_models_per_page": {
+            "en": "The number of produits per page.",
+            "ar": "The number of produits per page."
+        },
+        "the_index_of_the_last_retrieved_item": {
+            "en": "The index of last retrieved produit.",
+            "ar": "The index of last retrieved produit."
+        },
+        "the_total_of_available_pages": {
+            "en": "The total of the available pages.",
+            "ar": "The total of the available pages."
+        },
+        "store_route_description": {
+            "en": "Create new produit.",
+            "ar": "Create new produit."
+        },
+        "store_route_response_description": {
+            "en": "The API's response will be JSON based data. The JSON object will be structured as follow",
+            "ar": "The API's response will be JSON based data. The JSON object will be structured as follow"
+        },
+        "update_route_description": {
+            "en": "Update existsing produit.",
+            "ar": "Update existsing produit."
+        },
+        "update_route_response_description": {
+            "en": "The API's response will be JSON based data. The JSON object will be structured as follow",
+            "ar": "The API's response will be JSON based data. The JSON object will be structured as follow"
+        },
+        "show_route_description": {
+            "en": "Retrieve existsing produit.",
+            "ar": "Retrieve existsing produit."
+        },
+        "show_route_response_description": {
+            "en": "The API's response will be JSON based data. The JSON object will be structured as follow",
+            "ar": "The API's response will be JSON based data. The JSON object will be structured as follow"
+        },
+        "the_id_of_model_to_retrieve": {
+            "en": "The unique id of the produit to retrieve",
+            "ar": "The unique id of the produit to retrieve"
+        },
+        "destroy_route_description": {
+            "en": "Delete existsing produit.",
+            "ar": "Delete existsing produit."
+        },
+        "destroy_route_response_description": {
+            "en": "The API's response will be JSON based data. The JSON object will be structured as follow",
+            "ar": "The API's response will be JSON based data. The JSON object will be structured as follow"
+        },
+        "the_id_of_model_to_delete": {
+            "en": "The id of the produit to delete.",
+            "ar": "The id of the produit to delete."
+        },
+        "general_description": {
+            "en": "Allows you to list, create, edit, show and delete produits.",
+            "ar": "Allows you to list, create, edit, show and delete produits."
+        },
+        "indicate_whether_the_request_was_successful_or_not": {
+            "en": "Indicate whether the request was successful or not.",
+            "ar": "Indicate whether the request was successful or not."
+        },
+        "the_id_of_the_model": {
+            "en": "The id of the produit.",
+            "ar": "The id of the produit."
+        },
+        "this_parameter_must_be_present_in_the_request": {
+            "en": "This parameter must be present in the request.",
+            "ar": "This parameter must be present in the request."
+        },
+        "the_request_failed_validation": {
+            "en": "The request failed validation.",
+            "ar": "The request failed validation."
+        },
+        "list_of_the_invalid_errors": {
+            "en": "List of the invalid errors.",
+            "ar": "List of the invalid errors."
+        },
+        "the_requested_model_does_not_exists": {
+            "en": "The requested produit does not exists.",
+            "ar": "The requested produit does not exists."
+        },
+        "the_user_does_not_have_permission_to_access_the_requested_resource": {
+            "en": "User does not have permission to access the requested resource.",
+            "ar": "User does not have permission to access the requested resource."
+        }
+    }
+}
